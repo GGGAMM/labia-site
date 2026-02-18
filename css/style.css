@@ -76,23 +76,30 @@ body {
     flex-wrap: wrap;
 }
 
-.app-store-link {
-    display: inline-block;
-    margin-bottom: 32px;
-}
-.app-store-badge,
-.google-play-badge {
-    height: 60px;
-    width: auto;
-    border-radius: 16px;
-    box-sizing: border-box;
+.app-store-link,
+.google-play-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 144px;
+    height: 50px;
+    flex-shrink: 0;
+    margin-bottom: 0;
+    border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
     transition: box-shadow 0.2s;
     background: #fff;
-    object-fit: contain;
+    overflow: hidden;
 }
-.app-store-link:hover .app-store-badge,
-.google-play-link:hover .google-play-badge {
+.app-store-badge,
+.google-play-badge {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+.app-store-link:hover,
+.google-play-link:hover {
     box-shadow: 0 4px 16px rgba(0,0,0,0.12);
 }
 .social-icons {
@@ -188,13 +195,8 @@ body {
     .app-store-link,
     .google-play-link {
         margin-bottom: 0;
-    }
-    
-    .app-store-badge,
-    .google-play-badge {
+        width: 140px;
         height: 50px;
-        width: auto;
-        max-width: 140px;
     }
     
     .social-icons {
@@ -239,10 +241,10 @@ body {
         gap: 8px;
     }
     
-    .app-store-badge,
-    .google-play-badge {
+    .app-store-link,
+    .google-play-link {
+        width: 120px;
         height: 45px;
-        max-width: 120px;
     }
     
     .main-nav a {
