@@ -473,9 +473,23 @@ a {
   color: var(--purple);
 }
 
+.social a {
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .social img {
   width: 22px;
   height: 22px;
+  object-fit: contain;
+}
+
+.social a[aria-label="TikTok"] img {
+  width: 18px;
+  height: 18px;
 }
 
 .copyright {
