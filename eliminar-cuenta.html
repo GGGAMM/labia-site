@@ -1,90 +1,133 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-page="delete">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eliminar Cuenta - Lab.IA</title>
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,800;1,9..40,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="main-header">
-        <a href="index.html" class="logo-link"><div class="logo">Lab.IA</div></a>
-        <nav class="main-nav">
-            <a href="terminos-de-uso.html">Términos de Uso</a>
-            <a href="politica-de-privacidad.html">Política de Privacidad</a>
-            <a href="mailto:main@usalabia.com">Contáctanos</a>
-        </nav>
+    <header class="site-header">
+        <div class="header-bar">
+            <a href="index.html" class="brand">
+                <img src="images/App store 1 copy.png" alt="Lab.IA">
+                <span>Lab.IA</span>
+            </a>
+            <div class="header-end">
+                <div class="lang-switch" role="group" aria-label="Idioma" data-i18n-attr="aria-label:lang.label">
+                    <button type="button" data-set-lang="es" aria-pressed="true">ES</button>
+                    <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+                    <button type="button" data-set-lang="pt" aria-pressed="false">PT</button>
+                </div>
+                <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" data-i18n-attr="aria-label:nav.open">
+                    <span></span>
+                </button>
+            </div>
+            <nav class="site-nav">
+                <a href="terminos-de-uso.html" data-i18n="nav.terms">Términos</a>
+                <a href="politica-de-privacidad.html" data-i18n="nav.privacy">Privacidad</a>
+                <a href="mailto:main@usalabia.com" data-i18n="nav.contact">Contacto</a>
+            </nav>
+        </div>
     </header>
     <main class="content-page">
-        <h1>Eliminar Cuenta y Datos</h1>
-        <p><strong>Última actualización: 14 de julio de 2025</strong></p>
+        <h1 data-i18n="delete.h1">Eliminar Cuenta y Datos</h1>
+        <p><strong data-i18n="delete.updated">Última actualización: 14 de julio de 2025</strong></p>
         
-        <h2>Solicitud de Eliminación de Cuenta</h2>
-        <p>Si deseas eliminar tu cuenta de Lab.IA y todos los datos asociados, puedes hacerlo siguiendo estos pasos:</p>
+        <h2 data-i18n="delete.h2request">Solicitud de Eliminación de Cuenta</h2>
+        <p data-i18n="delete.p1">Si deseas eliminar tu cuenta de Lab.IA y todos los datos asociados, puedes hacerlo siguiendo estos pasos:</p>
         
         <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h3>Pasos para Eliminar tu Cuenta:</h3>
+            <h3 data-i18n="delete.h3steps">Pasos para Eliminar tu Cuenta:</h3>
             <ol style="line-height: 1.8;">
-                <li><strong>Envía un correo electrónico</strong> a <a href="mailto:main@usalabia.com">main@usalabia.com</a> con el asunto "Solicitud de Eliminación de Cuenta"</li>
-                <li><strong>Incluye la siguiente información</strong> en tu solicitud:
+                <li data-i18n-html="delete.step1"><strong>Envía un correo electrónico</strong> a <a href="mailto:main@usalabia.com">main@usalabia.com</a> con el asunto "Solicitud de Eliminación de Cuenta"</li>
+                <li>
+                    <span data-i18n-html="delete.step2"><strong>Incluye la siguiente información</strong> en tu solicitud:</span>
                     <ul style="margin-top: 10px;">
-                        <li>Tu dirección de correo electrónico asociada a la cuenta</li>
-                        <li>Tu nombre de usuario (si aplica)</li>
-                        <li>Una confirmación de que deseas eliminar permanentemente tu cuenta y todos los datos asociados</li>
+                        <li data-i18n="delete.liEmail">Tu dirección de correo electrónico asociada a la cuenta</li>
+                        <li data-i18n="delete.liUser">Tu nombre de usuario (si aplica)</li>
+                        <li data-i18n="delete.liConfirm">Una confirmación de que deseas eliminar permanentemente tu cuenta y todos los datos asociados</li>
                     </ul>
                 </li>
-                <li><strong>Espera nuestra confirmación</strong> - Procesaremos tu solicitud dentro de 30 días hábiles</li>
+                <li data-i18n-html="delete.step3"><strong>Espera nuestra confirmación</strong> - Procesaremos tu solicitud dentro de 30 días hábiles</li>
             </ol>
         </div>
 
-        <h2>Datos que se Eliminarán</h2>
-        <p>Al eliminar tu cuenta, se eliminarán permanentemente los siguientes datos:</p>
+        <h2 data-i18n="delete.h2removed">Datos que se Eliminarán</h2>
+        <p data-i18n="delete.pRemoved">Al eliminar tu cuenta, se eliminarán permanentemente los siguientes datos:</p>
         <ul style="line-height: 1.8;">
-            <li>Información de perfil de usuario (nombre, correo electrónico, nombre de usuario)</li>
-            <li>Historial de uso de la aplicación</li>
-            <li>Preferencias y configuraciones de la cuenta</li>
-            <li>Cualquier contenido generado o guardado dentro de la aplicación</li>
-            <li>Datos de autenticación y sesiones</li>
+            <li data-i18n="delete.liProfile">Información de perfil de usuario (nombre, correo electrónico, nombre de usuario)</li>
+            <li data-i18n="delete.liHistory">Historial de uso de la aplicación</li>
+            <li data-i18n="delete.liPrefs">Preferencias y configuraciones de la cuenta</li>
+            <li data-i18n="delete.liContent">Cualquier contenido generado o guardado dentro de la aplicación</li>
+            <li data-i18n="delete.liAuth">Datos de autenticación y sesiones</li>
         </ul>
 
-        <h2>Datos que se Pueden Retener</h2>
-        <p>Por razones legales y operativas, podemos retener cierta información por períodos específicos:</p>
+        <h2 data-i18n="delete.h2kept">Datos que se Pueden Retener</h2>
+        <p data-i18n="delete.pKept">Por razones legales y operativas, podemos retener cierta información por períodos específicos:</p>
         <ul style="line-height: 1.8;">
-            <li><strong>Información de transacciones:</strong> Se puede retener información relacionada con compras o suscripciones durante el período requerido por ley (generalmente 7 años para fines fiscales y contables)</li>
-            <li><strong>Registros de seguridad:</strong> Podemos mantener registros de actividades sospechosas o fraudulentas para proteger nuestros servicios y otros usuarios</li>
-            <li><strong>Datos anonimizados:</strong> Podemos conservar datos agregados y anonimizados que no identifiquen personalmente a ningún usuario</li>
+            <li data-i18n-html="delete.liTx"><strong>Información de transacciones:</strong> Se puede retener información relacionada con compras o suscripciones durante el período requerido por ley (generalmente 7 años para fines fiscales y contables)</li>
+            <li data-i18n-html="delete.liSecurity"><strong>Registros de seguridad:</strong> Podemos mantener registros de actividades sospechosas o fraudulentas para proteger nuestros servicios y otros usuarios</li>
+            <li data-i18n-html="delete.liAnon"><strong>Datos anonimizados:</strong> Podemos conservar datos agregados y anonimizados que no identifiquen personalmente a ningún usuario</li>
         </ul>
 
-        <h2>Período de Retención</h2>
-        <p>Después de recibir tu solicitud de eliminación:</p>
+        <h2 data-i18n="delete.h2period">Período de Retención</h2>
+        <p data-i18n="delete.pPeriod">Después de recibir tu solicitud de eliminación:</p>
         <ul style="line-height: 1.8;">
-            <li>Procesaremos la eliminación de tu cuenta y datos personales dentro de <strong>30 días hábiles</strong></li>
-            <li>Los datos que debemos retener por razones legales se conservarán según lo requiera la ley aplicable</li>
-            <li>Una vez eliminados, los datos no se pueden recuperar</li>
+            <li data-i18n-html="delete.li30">Procesaremos la eliminación de tu cuenta y datos personales dentro de <strong>30 días hábiles</strong></li>
+            <li data-i18n="delete.liLegal">Los datos que debemos retener por razones legales se conservarán según lo requiera la ley aplicable</li>
+            <li data-i18n="delete.liGone">Una vez eliminados, los datos no se pueden recuperar</li>
         </ul>
 
-        <h2>Información Adicional</h2>
-        <p>Si tienes preguntas sobre el proceso de eliminación de cuenta o sobre qué datos se eliminarán o retendrán, puedes contactarnos en:</p>
+        <h2 data-i18n="delete.h2more">Información Adicional</h2>
+        <p data-i18n="delete.pMore">Si tienes preguntas sobre el proceso de eliminación de cuenta o sobre qué datos se eliminarán o retendrán, puedes contactarnos en:</p>
         <p style="margin: 20px 0;">
-            <strong>Email:</strong> <a href="mailto:main@usalabia.com">main@usalabia.com</a><br>
-            <strong>Dirección:</strong> GGGAM Enterprises LLC<br>
+            <strong data-i18n="delete.email">Email:</strong> <a href="mailto:main@usalabia.com">main@usalabia.com</a><br>
+            <strong data-i18n="delete.address">Dirección:</strong> GGGAM Enterprises LLC<br>
             1111B S Governors Ave, STE 37552<br>
             Dover, DE 19904, United States
         </p>
 
         <div style="background: #fff3cd; padding: 15px; border-radius: 8px; margin: 30px 0; border-left: 4px solid #ffc107;">
-            <p style="margin: 0;"><strong>⚠️ Importante:</strong> La eliminación de tu cuenta es permanente e irreversible. Asegúrate de que realmente deseas eliminar tu cuenta antes de enviar la solicitud.</p>
+            <p style="margin: 0;" data-i18n-html="delete.warn"><strong>⚠️ Importante:</strong> La eliminación de tu cuenta es permanente e irreversible. Asegúrate de que realmente deseas eliminar tu cuenta antes de enviar la solicitud.</p>
         </div>
 
         <div style="margin-top: 40px; text-align: center;">
-            <a href="mailto:main@usalabia.com?subject=Solicitud de Eliminación de Cuenta" style="display: inline-block; background: #0077cc; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold;">Solicitar Eliminación de Cuenta</a>
+            <a href="mailto:main@usalabia.com?subject=Solicitud de Eliminación de Cuenta" data-delete-mail data-i18n="delete.cta" style="display: inline-block; background: #0077cc; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold;">Solicitar Eliminación de Cuenta</a>
         </div>
     </main>
-    <footer class="main-footer">
-        <a href="mailto:main@usalabia.com">Contacto</a>
-        <a href="politica-de-privacidad.html">Política de Privacidad</a>
-        <a href="terminos-de-uso.html">Términos de Uso</a>
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <div class="cta-row">
+                <a class="store-badge" data-store="apple" href="https://apps.apple.com/es/app/lab-ia/id6755089051" target="_blank" rel="noopener noreferrer">
+                    <img src="images/badges/apple-es.svg" data-badge="apple" alt="Consíguelo en el App Store" data-i18n-attr="alt:store.app">
+                </a>
+                <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.usalabia.LabIA" target="_blank" rel="noopener noreferrer">
+                    <img src="images/badges/play-es.png" data-badge="play" alt="Consíguelo en Google Play" data-i18n-attr="alt:store.play">
+                </a>
+            </div>
+            <div class="footer-links">
+                <a href="politica-de-privacidad.html" data-i18n="nav.privacy">Privacidad</a>
+                <a href="terminos-de-uso.html" data-i18n="nav.terms">Términos</a>
+                <a href="eliminar-cuenta.html" data-i18n="footer.delete">Eliminar cuenta</a>
+                <a href="mailto:main@usalabia.com" data-i18n="nav.contact">Contacto</a>
+            </div>
+            <div class="social">
+                <a href="https://www.instagram.com/usalab.ia/" aria-label="Instagram" target="_blank" rel="noopener">
+                    <img src="images/instagram-svgrepo-com.svg" alt="">
+                </a>
+                <a data-social="tiktok" href="https://www.tiktok.com/@usalab.ia?lang=es" aria-label="TikTok" target="_blank" rel="noopener">
+                    <img src="images/logo-tiktok-svgrepo-com.svg" alt="">
+                </a>
+            </div>
+            <p class="copyright" data-i18n="footer.copy">Propiedad y operado por GGGAM Enterprises LLC</p>
+        </div>
     </footer>
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
